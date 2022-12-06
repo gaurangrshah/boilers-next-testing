@@ -40,6 +40,33 @@
 
 
 
+## Cypress
+
+> ```shell
+> yarn add -D cypress @testing-library/cypress
+> ```
+>
+> ```json
+> // tsconfig.json
+> 
+> {
+>   "compilerOptions": {
+>     "types": ["cypress", "@testing-library/cypress"]
+>   }
+> }
+> ```
+>
+> ```js
+> // cypress/support/command.ts
+> 
+> /// <reference types="cypress" />
+> import "@testing-library/cypress/add-commands";
+> ```
+>
+> **sha**: 
+
+>
+
 
 
 **TODO:**
@@ -48,7 +75,8 @@
 - [x] typescript eslint support
 - [x] typescript absolute imports (.tsconfig)
 - [x] add `@types/react`
-- [ ] configure cypress + @testing-library/cypress 
+- [x] configure cypress + @testing-library/cypress 
   - [ ] add cypress test scripts
+- [ ] Add Jest Types
 - [ ] install **[next-auth](https://next-auth.js.org/getting-started/example)** `yarn add next-auth`
 
