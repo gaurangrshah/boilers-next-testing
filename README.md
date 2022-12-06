@@ -181,5 +181,4 @@
 - [x] configure cypress + @testing-library/cypress 
   - [x] add cypress test scripts
 - [x] Add Jest Types
-- [ ] install **[next-auth](https://next-auth.js.org/getting-started/example)** `yarn add next-auth`
 
