@@ -7,12 +7,13 @@ const createJestConfig = nextJest({
 
 // Add any custom config to be passed to Jest
 const customJestConfig = {
+  preset: 'ts-jest',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   moduleNameMapper: {
     // Handle module aliases (this will be automatically configured for you soon)
     // '^@/components/(.*)$': '<rootDir>/components/$1',
     // '^@/pages/(.*)$': '<rootDir>/pages/$1',
-    '^@/(.*)$': '<rootDir>/$1',
+    '^@/(.*)$': '<rootDir>/$1', // allows absolute paths in jest.
   },
   testEnvironment: 'jest-environment-jsdom',
   maxWorkers: 1,

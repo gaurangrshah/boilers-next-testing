@@ -65,6 +65,12 @@
 >
 > **sha**: 
 
+>## Jest Types
+>
+>>```shell
+>>yarn add -D ts-jest @types/jest
+>>```
+>
 >
 
 
